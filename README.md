@@ -78,6 +78,53 @@ With over 49,000 records collected between January and December 2023, this datas
   <li><strong>Key Variables:</strong> number of vehicles, number of casualties, speed limits, road and weather conditions, lighting, pedestrian involvement, and junction details</li>
 </ul>
 
+<!-- Repository Structure -->
+<h2 id="project-files">Repository Structure</h2>
+
+<p>
+This repository contains datasets, scripts, visual outputs, and documentation for our final project on pedestrian safety analysis in Great Britain. The modeling, evaluation, and interpretation are performed in Python and documented below.
+</p>
+
+---
+
+<h3>Data</h3>
+
+<ul>
+  <li><code>dft-road-casualty-statistics-collision-provisional-mid-year-unvalidated-2023.csv</code> – Raw collision-level dataset from the UK Department for Transport (DfT)</li>
+  <li><code>dft-road-casualty-statistics-casualty-provisional-mid-year-unvalidated-2023.csv</code> – Raw casualty-level dataset used to identify pedestrian involvement and injury outcomes</li>
+</ul>
+
+---
+
+<h3>Code</h3>
+
+<ul>
+  <li><code>Pedestrian_Safety_Analysis.ipynb</code> – Main notebook containing the full modeling pipeline, including preprocessing, SMOTE balancing, model training (Random Forest & XGBoost), evaluation, and SHAP-based interpretation</li>
+  <li><code>Pedestrian_Safety_Analysis.html</code> – HTML-rendered output of the analysis notebook (for easier review and sharing)</li>
+</ul>
+
+---
+
+<h3>Output</h3>
+
+<ul>
+  <li><code>Casualty_Severity_Class.png</code> – Visualization of severity distribution across accident types</li>
+  <li><code>Key_Variables_Distribution.png</code> – Distribution plot of selected features used in modeling</li>
+  <li><code>SHAP_RF_Pedestrian.png</code> – SHAP summary plot for pedestrian involvement (Random Forest)</li>
+  <li><code>SHAP_RF_Severity.png</code> – SHAP summary plot for injury severity (Random Forest)</li>
+  <li><code>SHAP_RF_Interaction.png</code> – SHAP summary plot for combined severity + pedestrian cases (Random Forest)</li>
+  <li><code>SHAP_XG_Pedestrian.png</code> – SHAP summary plot for pedestrian involvement (XGBoost)</li>
+  <li><code>SHAP_XG_Severity.png</code> – SHAP summary plot for injury severity (XGBoost)</li>
+  <li><code>SHAP_XG_Interaction.png</code> – SHAP summary plot for combined severity + pedestrian cases (XGBoost)</li>
+</ul>
+
+---
+
+<h3>Documentation</h3>
+
+<ul>
+  <li><code>Final_Project_Tian_Tong.pdf</code> – Full written report detailing the background, data methodology, modeling results, and policy implications</li>
+</ul>
 
 
 <!-- PREREQUISITES -->
